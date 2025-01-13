@@ -1,5 +1,4 @@
 import zipfile
-import os
 
 # Paths to zip files
 train_zip_path = 'data/WIDER_train.zip'

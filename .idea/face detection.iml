@@ -2,7 +2,7 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="Python 3.11 virtualenv at C:\Users\hicha\.virtualenvs\face_detection-8SROn8mc" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.11 virtualenv at C:\Users\hicha\.virtualenvs\face-detection-CMvGIgFl" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

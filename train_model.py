@@ -1,5 +1,6 @@
-import tensorflow as tf
+import cv2
 import keras
+import numpy as np
 
 # Build the model
 model = keras.models.Sequential([

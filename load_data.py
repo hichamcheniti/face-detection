@@ -1,8 +1,8 @@
 import cv2
 import os
-import numpy as np
 from imgaug import augmenters as iaa
 import matplotlib.pyplot as plt
+from tqdm import tqdm
 
 # Directory paths
 train_data_dir = 'data/WIDER_train'
@@ -53,12 +53,13 @@ seq = iaa.Sequential([
     iaa.AdditiveGaussianNoise(scale=(0, 0.05*255)),  # Gaussian noise
 ])
 
-# Augment training images
-augmented_train_images = [seq(image=img) for img in train_images]
+# Augment training images with progress display
+augmented_train_images = []
+for img in tqdm(train_images, desc="Augmenting images"):
+    augmented_train_images.append(seq(image=img))
 
 # Example of displaying an augmented image
 plt.imshow(cv2.cvtColor(augmented_train_images[0], cv2.COLOR_BGR2RGB))
 plt.axis('off')
 plt.title('Augmented Image')
 plt.show()
-
